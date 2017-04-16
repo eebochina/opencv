@@ -39,6 +39,7 @@
 
 @class CvAbstractCamera;
 
+__attribute__((visibility("default")))
 @interface CvAbstractCamera : NSObject
 {
     UIDeviceOrientation currentDeviceOrientation;
@@ -96,6 +97,7 @@
 
 @end
 
+__attribute__((visibility("default")))
 @interface CvVideoCamera : CvAbstractCamera<AVCaptureVideoDataOutputSampleBufferDelegate>
 {
     AVCaptureVideoDataOutput *videoDataOutput;
@@ -136,6 +138,7 @@
 
 @end
 
+__attribute__((visibility("default")))
 @interface CvPhotoCamera : CvAbstractCamera
 {
     AVCaptureStillImageOutput *stillImageOutput;
