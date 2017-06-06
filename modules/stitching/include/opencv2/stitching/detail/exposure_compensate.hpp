@@ -62,7 +62,7 @@ class CV_EXPORTS ExposureCompensator
 public:
     virtual ~ExposureCompensator() {}
 
-    enum { NO, GAIN, GAIN_BLOCKS };
+    enum { OPENCV_STITCHING_NO=0, GAIN, GAIN_BLOCKS };
     static Ptr<ExposureCompensator> createDefault(int type);
 
     /**
