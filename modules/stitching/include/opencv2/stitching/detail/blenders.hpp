@@ -64,7 +64,7 @@ class CV_EXPORTS Blender
 public:
     virtual ~Blender() {}
 
-    enum { NO, FEATHER, MULTI_BAND };
+    enum { OPENCV_STITCHING_NO=0, FEATHER, MULTI_BAND };
     static Ptr<Blender> createDefault(int type, bool try_gpu = false);
 
     /** @brief Prepares the blender for blending.
